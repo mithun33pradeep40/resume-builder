@@ -1,0 +1,77 @@
+/* Import the Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: radial-gradient(circle, rgb(91, 219, 129) 0%, rgb(59, 83, 48) 100%);
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.header h1 {
+    color: #f4a261;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #d9d9d9;
+}
+
+.templates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.template-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for template cards */
+.template-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a deeper shadow */
+    background: rgba(255, 255, 255, 0.2); /* Lighten the card background */
+}
+
+.template-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images inside the card */
+.template-card:hover img {
+    transform: scale(1.1); /* Slightly zoom in on the image */
+}
+
+.template-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #f4a261;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for text */
+.template-card:hover p {
+    color: #ffffff; /* Change text color to white on hover */
+}
